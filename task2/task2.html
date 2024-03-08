@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+</head>
+
+<body>
+    <h1>Registiration Form</h1>
+    <form action="personalInformation">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="firstName">First Name: </label>
+            <input type="text" min="3" name="Name" id="firstName"><br>
+            <label for="lastName">Last Name: </label>
+            <input type="text" min="3" name="Surename" id="lastName"><br>
+            <label for="age">Age: </label>
+            <input type="number" min="0" max="100" required><br>
+            <label for="gender">Gender: </label>
+            <select name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="male">Female</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Contact Information</legend>
+           <label for="email">Email Address: </label>
+           <input type="email" id="email" name="email"><br>
+           <label for="password">Password: </label>
+           <input type="password" id="password" name="password"><br>
+           <label for="country">Country: </label>
+           <select name="country" id="country">
+            <optgroup label="Europe">
+                <option value="FR">France</option>
+                <option value="DE">Germany</option>
+                <option value="IT">Italy</option>
+            </optgroup>
+            <optgroup label="Asia">
+                <option value="CN">China</option>
+                <option value="IN">India</option>
+                <option value="JP">Japan</option>
+            </optgroup>
+            <optgroup label="Other">
+                <option value="US">United Stats</option>
+                <option value="CA">Canada</option>
+                <option value="UK">United Kingdom</option>
+            </optgroup>
+           </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Adress Information</legend>
+            <label for="adress">Adress: </label>
+            <input type="text" id="adress" name="adress"><br>
+            <label for="city">City: </label>
+            <input type="text" id="city" name="city"><br>
+            <label for="postalCode">Postal Code: </label>
+            <input type="text" name="postalCode" id="postalCode"><br>
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="tel">
+        </fieldset>
+        <label for="additionalComments">Additional Comments:</label><br>
+        <textarea name="comment" id="additionalComments" cols="50" rows="5"></textarea><br>
+        <input type="checkbox" name="subscribe" id="subscribe">
+        <label for="subscribe">Subscribe to our newsletter</label><br>
+        <button>Register</button>
+
+
+
+      
+    </form>
+</body>
+
+</html>
