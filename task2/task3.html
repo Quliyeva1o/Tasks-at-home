@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+</head>
+
+<body>
+    <h1>Event Registiration Form</h1>
+    <form action="eventRegistiration">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fullName">Full Name: </label>
+            <input type="text" maxlength="30" id="fullName" name="fullName" required><br>
+            <label for="email">Email Adress: </label>
+            <input type="email" name="email" id="email" required><br>
+            <label for="tel">Phone Number</label>
+            <input type="tel" maxlength="14" name="tel" max=""><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Event Details</legend>
+            <label for="eventName">Event Name: </label>
+            <input type="text" id="eventName" name="eventName" required><br>
+            <label for="eventDate">Event Date: </label>
+            <input type="date" id="eventDate" name="eventDate"><br>
+            <label for="eventLocation">Event Location: </label>
+            <input type="text" id="eventLocation" name="eventLocation">
+        </fieldset>
+        <fieldset>
+            <legend>Ticket Selection</legend>
+            <label for="ticketType">Choose Ticket Type:</label><br>
+            <input type="radio" value="standart" name="ticketType"> <label for="standart">Standart</label><br>
+            <input type="radio" value="vip" name="ticketType"> <label for="vip">VIP</label><br>
+            <label for="quantity">Quantity: </label>
+            <input type="text" id="quantity">
+        </fieldset>
+        <fieldset>
+            <legend>Dietary Preferences</legend>
+            <label for="dietartyPreference">Do you have any dietary preferences?</label><br>
+            <input type="checkbox" name="dietartyPreference" value="vegeterian" >
+            <label for="dietartyPreference">Vegetarian</label><br>
+            <input type="checkbox" name="dietartyPreference" id="dietartyPreference" value="vegan">
+            <label for="dietartyPreference">Vegan</label><br>
+            <input type="checkbox" name="dietartyPreference" id="dietartyPreference" value="glutenFree">
+            <label for="dietartyPreference">Gluten-Free</label><br>
+        </fieldset>
+
+        <label for="additionalComments">Additional Comments:</label><br>
+        <textarea name="additionalComments" id="additionalComments" cols="50" rows="5"></textarea><br>
+        <input type="checkbox" id="agree">
+        <label for="agree">I agree to the terms and conditions</label><br>
+
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+
+
+</html>
