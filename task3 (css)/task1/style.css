@@ -1,0 +1,19 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.first-heading p span:first-of-type {
+    border: 1px solid black;
+}
+
+.first-heading p span:last-of-type {
+    background-color: red
+}
+
+.second-heading h1 {
+    background-color: yellow
+}
+
+.third-heading span {
+    background-color: green;
+}
