@@ -1,0 +1,25 @@
+ul:nth-of-type(2) {
+    background-color: yellow;
+}
+
+h3 {
+    border: 5px solid blueviolet;
+    color: deeppink;
+}
+
+div:first-of-type>span:first-of-type {
+    background-color: cornflowerblue;
+}
+
+.first-green {
+    background-color: green;
+}
+
+#pink span {
+    color: deeppink;
+}
+
+.second-green {
+    background-color: green;
+}
+.links>a:last-of-type{background-color: yellow;}
