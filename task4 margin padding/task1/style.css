@@ -1,0 +1,28 @@
+.margin--bgcolor--orange {
+    background-color: orange;
+}
+
+.border--bgcolor--yellow {
+    background-color: yellow;
+}
+
+.padding--bgcolor--yellowgreen {
+    background-color: yellowgreen;
+}
+
+.padding {
+    margin: 0px 40px 0px;
+    padding-bottom: 40px;
+}
+
+
+div{font-size: 40px;}
+.content {
+    background-color: cornflowerblue;
+}
+
+img {
+    padding: 40px 0px;
+    object-fit: cover;
+    width: 100%;
+}

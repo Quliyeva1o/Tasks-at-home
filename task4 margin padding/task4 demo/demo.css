@@ -1,0 +1,78 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    color: #777;
+}
+
+section {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    display: grid;
+    text-align: center;
+}
+
+
+span {
+    padding: 20px 50px;
+    background-color: #000000;
+    letter-spacing: 5px;
+    font-size: 25px;
+    color: #fff;
+    text-align: justify;
+}
+
+.scroll__down,
+.cool {
+    background-image: url(images/img_parallax.jpg);
+    min-height: 100vh;
+}
+
+.less__height {
+    background-image: url(images/img_parallax2.jpg);
+    min-height: 50vh;
+}
+
+.scroll__up {
+    background-image: url(images/img_parallax3.jpg);
+    min-height: 50vh;
+}
+
+.scroll__down,
+.less__height,
+.scroll__up,
+.cool {
+    background-size: cover;
+    opacity: 0.7;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+h1 {
+    color: #fff;
+    padding: 20px 50px;
+    letter-spacing: 5px;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.parallax__demo h1 {
+    color: #000;
+}
+
+.p__section {
+    background-color: #2b2b2b;
+    padding: 70px;
+    text-align: start;
+    justify-content: start;
+    
+}
+
+.p__section p {
+    color: #fff;
+}
