@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Mukta", sans-serif;
+
+    box-sizing: border-box;
+}
+
+.about-section {
+    display: flex;
+    height: 100vh;
+}
+
+.about-section img {
+    width: 220px;
+    height: 220px;
+    margin: 0 auto;
+}
+
+.about-section>div:first-of-type {
+    text-align: center;
+    background-color: rgb(164, 164, 164);
+}
+
+.about-section>div {
+
+    justify-content: center;
+    display: inline;
+    padding: 100px;
+    width: 50%;
+
+}
+
+.links {
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.links a {
+    color: #000;
+    font-size: 30px;
+    padding: 15px;
+}
+
+.about-section h1 {
+    margin-top: 40px;
+    font-size: 30px;
+
+}
+
+.about-section button {
+    padding: 10px 80px;
+    background-color: #000;
+    color: #fff;
+    margin-top: 40px;
+}
+
+.about-section>div:last-of-type>h1 {
+    font-size: 70px;
+}
+
+.about-section p {
+    font-size: 20px;
+
+}
+
+.about-section>div:last-of-type button:last-of-type {
+    margin-left: 30px;
+}
+
+p {
+    color: rgba(0, 0, 0, 0.6)
+}
+
+.about-section>div:last-of-type h1 {
+    margin-top: 0;
+}
+
+button:hover {
+    cursor: pointer;
+}

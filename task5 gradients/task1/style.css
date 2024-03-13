@@ -1,0 +1,22 @@
+  section {
+    margin: 10vh auto;
+    width: 800px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(to right, rgba(255, 166, 0, 0.5), #ec38bc88, #7403c07c, rgba(0, 255, 255, 0.5)), url(bgimg.jpg);
+    text-align: center;
+    font-size: 70px;
+    color: white;
+    font-weight: 900;
+
+  }
+
+  h1 {
+    padding: 240px 0px;
+    text-align: center;
+    font-size: 70px;
+    color: white;
+    font-weight: 900;
+  }
