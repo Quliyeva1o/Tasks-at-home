@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Didact Gothic", sans-serif;
+
+}
+
+
+.cards {
+    margin: 50px 150px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card {
+    cursor: pointer;
+}
+
+.image {
+
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    transition: 0.51s;
+
+}
+
+.image1 {
+    background-image: url(images/footballsitem-14-mart.350x0.jpg);
+}
+
+.image2 {
+    background-image: url(images/fu-panda-4-700x1000-1.350x0.jpg);
+}
+
+.image3 {
+    background-image: url(images/lohusa.jpg);
+}
+
+.image4 {
+    background-image: url(images/dune2-700x1000.350x0.jpg);
+}
+
+.flags img {
+    width: 40px;
+}
+
+.im {
+    overflow: hidden;
+}
+
+.card h1 {
+
+    margin: auto;
+    padding: 15px 5px;
+    background-color: #e7e7e7;
+    font-size: 18px;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.flags {
+    justify-content: center;
+    margin: 10px auto;
+    display: flex;
+}
+
+.new {
+    font-weight: 700;
+    position: absolute;
+    background-color: rgba(255, 166, 0, 0.836);
+    padding: 8px 10px;
+    color: #fff;
+    right: 0;
+    z-index: 6;
+}
+.im{position: relative;}
+
+.btn {
+    background-color: #e7e7e7;
+    padding: 15px;
+    position: relative;
+}
+
+.btn span {
+    position: absolute;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    background-color: darkred;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.card {
+    width: 100%;
+}
+
+button {
+    font-weight: 900;
+    text-transform: uppercase;
+    background-color: #000;
+    padding: 10px 30px;
+    color: #fff;
+    border-radius: 40px;
+    border: none;
+    transition: 0.5s;
+}
+
+.card:hover .image {
+    transform: scale(1.2, 1.2);
+
+}
+
+.card:hover h1 {
+    background-color: #000;
+    color: #fff;
+}
+
+button:hover {
+    background-color: orange;
+}
