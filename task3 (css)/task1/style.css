@@ -7,11 +7,11 @@
 }
 
 .first-heading p span:last-of-type {
-    background-color: red
+    background-color: red;
 }
 
 .second-heading h1 {
-    background-color: yellow
+    background-color: yellow;
 }
 
 .third-heading span {
