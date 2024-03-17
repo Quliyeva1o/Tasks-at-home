@@ -39,9 +39,7 @@ header {
     background-color: #fff;
 }
 
-.nav-links {
-    padding: 20px 0;
-}
+
 
 header p,
 header a {
@@ -83,7 +81,7 @@ header hr {
 }
 
 .nav-links>ul>li {
-    padding: 0 15px;
+    padding: 20px 15px;
     display: block;
 }
 
@@ -93,14 +91,31 @@ header hr {
 }
 
 .dropdown>li {
+    transition: .3s;
     padding-right: 20px;
 }
 
+.nav-links .active {
+    color: #f6214b;
+}
+
+.nav-links a:hover {
+    color: #f6214b;
+
+}
+
+.nav-links a {
+    transition: .3s;
+}
+
 .drop-menu {
-    padding: 10px 0;
-    position: absolute;
     display: none;
     transition: 3s;
+
+}
+
+a {
+    transition: all 0.3s ease 0s;
 }
 
 .drop-menu li {
@@ -110,16 +125,17 @@ header hr {
 
 }
 
-.drop-menu {
-    margin: 21px 0 0 0;
+
+.dropdown:hover .drop-menu {
+    padding: 10px 0;
+    position: absolute;
+    display: block;
+    margin: 20px 0 0 0;
     padding: 15px;
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
     background: #fff;
-}
-
-.dropdown:hover .drop-menu {
     transition: 3s;
-    display: block;
+    ;
 }
 
 
@@ -804,9 +820,13 @@ header hr {
 }
 
 .plan-card-end a i {
-    padding-left: 20px;
+    padding-left: 15px;
+    transition: .3s;
 }
 
+.plan-card-end a:hover i {
+    transform: translateX(10px);
+}
 .plan-card .card:hover .plan-card-center {
     background-color: #f6214b;
     color: #fff;
@@ -836,11 +856,13 @@ header hr {
     padding: 15px;
 }
 
-.plan-card-center,
-.plan-card-end {
-    text-align: center;
-}
+@media(max-width:800px) {
 
+    .plan-card-center,
+    .plan-card-end {
+        text-align: center;
+    }
+}
 
 
 .plan-section .title {
@@ -1015,8 +1037,9 @@ footer h3 {
     padding: 15px 0;
     align-items: center;
 }
-
+.social i:hover{background-color: #f6214b;}
 .footer-bottom i {
+    transition: .3s;
     align-items: center;
     color: #fff;
     background-color: #000;
@@ -1028,7 +1051,7 @@ footer h3 {
     padding: initial;
     display: inline;
     align-items: center;
-    
+
 }
 
 .footer-bottom p a {
@@ -1039,8 +1062,45 @@ footer h3 {
     display: flex;
 }
 
-@media(max-width:500px){
+@media(max-width:500px) {
     .footer-top>div {
-        padding: 0 ;
+        padding: 0;
     }
 }
+
+.generic-title {
+    background-color: #f6214b;
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+}
+
+.generic-title h1 {
+    padding-top: 100px;
+    margin: auto;
+    font-size: 30px;
+    color: #fff;
+}
+.generic-title p{color: #fff;
+margin-top: 20px;}
+
+.elaboration p{color: #777777;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.625em;
+    padding-bottom: 20px;
+   
+}
+.elaboration{padding-bottom: 120px;}
+.elaboration h1{
+    padding-bottom: 20px;
+    font-weight: 600;
+}
+
+.elaboration p:first-of-type, .elaboration p:last-of-type{ text-indent: 20px;}
+
+
+.gengeric .offer, .gengeric .elaboration {background-color: #f9f9ff;}
