@@ -365,11 +365,22 @@ header hr {
 
 .top-courses-section {
     padding: 120px 0;
+
 }
 
 .top-courses-section .card-info {
+    padding: 20px 0;
     display: flex;
     justify-content: space-between;
+
+}
+
+.top-courses-section .card-info h3 {
+    font-weight: 600;
+}
+
+.top-courses-section .card-info h3:last-of-type {
+    color: #f6214b;
 }
 
 .top-courses-section .content {
@@ -395,11 +406,15 @@ header hr {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url(images/course1.jpg);
+
 }
 
 .top-courses-section .card .image {
     position: relative;
+}
+
+.top-courses-section .cards .card {
+    padding-bottom: 50px;
 }
 
 .top-courses-section .card span {
@@ -412,5 +427,88 @@ header hr {
     display: flex;
     bottom: 20px;
     left: 20px;
+}
+
+
+.top-courses-section .cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.top-courses-section .card .image-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.top-courses-section .image-wrapper .image {
+    transition: 0.3s;
+}
+
+.top-courses-section .card:hover .image {
+    transform: scale(1.2, 1.2);
+}
+
+#c1 {
+    background-image: url(images/course1.jpg);
+}
+
+#c2 {
+    background-image: url(images/coruse.jpg);
+}
+
+#c3 {
+    background-image: url(images/course3.jpg);
+}
+
+#c4 {
+    background-image: url(images/course4.jpg);
+}
+
+#c5 {
+    background-image: url(images/course5.jpg);
+}
+
+#c6 {
+    background-image: url(images/course6.jpg);
+}
+
+@media (max-width: 991px) {
+    .top-courses-section .container {
+        max-width: 100%;
+    }
+
+    .top-courses-section .container .image {
+        max-height: 300px;
+
+
+
+    }
+}
+
+@media(max-width:576px) {
+
+
+    .top-courses-section .container .image-wrapper .image {
+        height: 500px;
+
+    }
+
+    .card {
+        padding: 0;
+    }
+}
+
+@media(max-width:400px) {
+
+
+    .top-courses-section .container .image-wrapper .image {
+        max-height: 500px;
+        height: 200px;
+
+    }
+
+    .card {
+        padding: 0;
+    }
 }
 
