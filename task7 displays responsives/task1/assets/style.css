@@ -1,0 +1,514 @@
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .container .contact {
+    text-align: end;
+}
+
+header .container .contact a {
+    color: #000;
+}
+
+header .container .contact a:last-of-type {
+
+    background-color: #f6214b;
+    color: #fff;
+    padding: 33px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+
+header .container .logo {
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+header {
+    box-shadow: -21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3);
+    align-items: center;
+    padding-top: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 2000;
+    background-color: #fff;
+}
+
+.nav-links {
+    padding: 20px 0;
+}
+
+header p,
+header a {
+    font: 14px 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #000;
+}
+
+.nav-links a {
+    font-size: 12px;
+}
+
+.col-4 {
+    line-height: 1.625em;
+
+
+}
+
+header hr {
+    margin-top: 10px;
+}
+
+
+.nav-links>ul {
+    font: 12px 'Poppins', sans-serif;
+
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+
+
+}
+
+
+
+.nav-links ul {
+    list-style: none;
+}
+
+.nav-links>ul>li {
+    padding: 0 15px;
+    display: block;
+}
+
+.nav-links a {
+    color: #000;
+    font-weight: 500;
+}
+
+.dropdown>li {
+    padding-right: 20px;
+}
+
+.drop-menu {
+    padding: 10px 0;
+    position: absolute;
+    display: none;
+    transition: 3s;
+}
+
+.drop-menu li {
+    transition: .5s;
+    width: 180px;
+    padding: 10px 0;
+
+}
+
+.drop-menu {
+    margin: 21px 0 0 0;
+    padding: 15px;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    background: #fff;
+}
+
+.dropdown:hover .drop-menu {
+    transition: 3s;
+    display: block;
+}
+
+
+
+
+.hero-section {
+
+    text-align: center;
+    height: 730px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(images/hero-bg.jpg);
+
+    position: relative;
+
+}
+
+.hero-bgcolor {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.hero h1 {
+    font: 60px 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #fff;
+
+
+}
+
+.hero h5 {
+    font: 14px 'Poppins', sans-serif;
+}
+
+.hero {
+    top: 200px;
+    position: relative;
+    z-index: 999;
+    text-align: center;
+    color: white;
+    padding-top: 40px;
+}
+
+.burger-btn {
+    display: none;
+
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.burger-btn button {
+    background: none;
+    border: none;
+}
+
+.burger-btn i {
+    font-size: 24px;
+    color: #f6214b;
+    font-weight: 900;
+}
+
+@media (max-width: 991px) {
+
+    .heading,
+    .contact,
+    nav {
+        display: none;
+    }
+
+    .burger-btn {
+        display: flex;
+    }
+
+    .hero h1 {
+        font-size: 45px
+    }
+
+    .hero br {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+
+
+    header .container .logo {
+        text-align: center;
+        margin: 0;
+    }
+}
+
+@media (max-width: 720px) {
+    .hero h1 {
+        font-size: 40px
+    }
+}
+
+
+.boxes {
+    display: flex;
+}
+
+.offer {
+    text-align: center;
+}
+
+.offer h1 {
+    padding: 0 15px;
+    font: 36px 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.offer>p {
+    font-weight: 300;
+    font-size: 14px;
+    padding-bottom: 70px;
+}
+
+.offer {
+    padding: 120px 0;
+}
+
+.box {
+    box-shadow: 0px 20px 60px 0px rgba(246, 33, 75, 0.3);
+    padding: 10px;
+    padding: 40px 30px;
+    margin: 0 15px;
+    border-radius: 10px;
+}
+
+.box img {
+    object-fit: cover;
+
+}
+
+.box p {
+    color: #777777;
+    font-size: 14px;
+}
+
+.box h3 {
+    padding: 30px 0;
+}
+
+@media (max-width: 991px) {
+
+    .boxes {
+        display: block;
+        padding: 20px;
+
+    }
+
+    .box {
+        margin: 0px;
+        margin-bottom: 30px;
+    }
+}
+
+.offer {
+    padding: 120px 15px;
+}
+
+.calculate-section {
+    background-color: #f6214b;
+    padding: 120px 0;
+    text-align: center;
+}
+
+.calculate-section .inputs {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.calculate-section .inputs div {
+    padding: 20px;
+
+}
+
+.calculate-section input::placeholder {
+    color: #fff;
+}
+
+.calculate-section input {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #ced4da;
+}
+
+.calculate-section input,
+.calculate-section button {
+    padding: 10px;
+    width: 100%;
+}
+
+.calculate-section button {
+    border-radius: 30px;
+    border: none;
+    font-weight: 500;
+}
+
+.calculate-section .inputs {
+    justify-content: center;
+}
+
+.calculate-section .title {
+    padding-bottom: 70px;
+}
+
+.calculate-section .title h1 {
+    font-size: 36px;
+    color: #fff;
+    font-weight: 600;
+    line-height: 1.2em;
+}
+
+.calculate-section .title p {
+    font-size: 14px;
+    color: #fff;
+    line-height: 1.6em;
+    font-weight: 300;
+}
+
+@media (max-width: 991px) {
+    .calculate-section .inputs button {
+        width: 200px;
+    }
+
+    .calculate-section {
+        padding: 100px 10px;
+    }
+
+    .calculate-section .inputs div {
+        padding: 10px;
+
+    }
+}
+
+.top-courses-section {
+    padding: 120px 0;
+
+}
+
+.top-courses-section .card-info {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.top-courses-section .card-info h3 {
+    font-weight: 600;
+}
+
+.top-courses-section .card-info h3:last-of-type {
+    color: #f6214b;
+}
+
+.top-courses-section .content {
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.top-courses-section .content p {
+    font-weight: 300;
+    color: #777777;
+    font-size: 14px;
+}
+
+.top-courses-section .content h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.top-courses-section .image {
+    width: 100%;
+    height: 200px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.top-courses-section .card .image {
+    position: relative;
+}
+
+.top-courses-section .cards .card {
+    padding-bottom: 50px;
+}
+
+.top-courses-section .card span {
+
+    background-color: #f6214b;
+    color: #fff;
+    padding: 10px 40px;
+    margin-top: -60px;
+    position: absolute;
+    display: flex;
+    bottom: 20px;
+    left: 20px;
+}
+
+
+.top-courses-section .cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.top-courses-section .card .image-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.top-courses-section .image-wrapper .image {
+    transition: 0.3s;
+}
+
+.top-courses-section .card:hover .image {
+    transform: scale(1.2, 1.2);
+}
+
+#c1 {
+    background-image: url(images/course1.jpg);
+}
+
+#c2 {
+    background-image: url(images/coruse.jpg);
+}
+
+#c3 {
+    background-image: url(images/course3.jpg);
+}
+
+#c4 {
+    background-image: url(images/course4.jpg);
+}
+
+#c5 {
+    background-image: url(images/course5.jpg);
+}
+
+#c6 {
+    background-image: url(images/course6.jpg);
+}
+
+@media (max-width: 991px) {
+    .top-courses-section .container {
+        max-width: 100%;
+    }
+
+    .top-courses-section .container .image {
+        max-height: 300px;
+
+
+
+    }
+}
+
+@media(max-width:576px) {
+
+
+    .top-courses-section .container .image-wrapper .image {
+        height: 500px;
+
+    }
+
+    .card {
+        padding: 0;
+    }
+}
+
+@media(max-width:400px) {
+
+
+    .top-courses-section .container .image-wrapper .image {
+        max-height: 500px;
+        height: 200px;
+
+    }
+
+    .card {
+        padding: 0;
+    }
+}
+
