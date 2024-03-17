@@ -321,9 +321,16 @@ header hr {
 }
 
 .calculate-section button {
+    cursor: pointer;
     border-radius: 30px;
     border: none;
     font-weight: 500;
+    transition: 0.3s;
+    border: 1px solid#fff;
+}
+
+.calculate-section button:hover {
+    background-color: transparent;
 }
 
 .calculate-section .inputs {
@@ -512,3 +519,152 @@ header hr {
     }
 }
 
+.basic-revolutions {
+    background-color: #222;
+}
+
+.basic-boxes {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.basic-box {
+    padding: 10px;
+}
+
+.basic-box.text {
+    padding: auto 70px;
+}
+
+.basic-boxes .basic-box img {
+    object-fit: cover;
+    width: 100%;
+
+}
+
+.basic-box p {
+    color: #777777;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.625em;
+}
+
+.basic-box h6 {
+    color: #ffffff;
+    font-weight: 200;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.basic-box h2 {
+    font-size: 30px;
+    color: #f6214b;
+    padding: 15px 0;
+}
+
+.schedule-table {
+    width: 100%;
+    border: 1px solid #dee2e6;
+    border-style: solid;
+}
+@media(max-width:500px){
+    .schedule-table-box {overflow: scroll;}
+}
+.schedule-section {
+    padding: 120px 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.schedule-title,
+.trainers-section .title {
+    padding-bottom: 70px;
+}
+
+.schedule-title h1,
+.trainers-section .title h1 {
+    font-size: 36px;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+
+.schedule-title p,
+.trainers-section .title p {
+    font-size: 14px;
+    color: #777777;
+    font-weight: 300;
+}
+
+.schedule-table th {
+    text-transform: uppercase;
+    background-color: #dee2e6;
+}
+
+.schedule-table td,
+.schedule-table th {
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid #ced4da;
+}
+
+.schedule-table td {
+    color: #777;
+    font-weight: 300;
+}
+
+.schedule-table tr:hover {
+    background-color: #f6214b;
+}
+
+.schedule-table tr:hover td {
+    color: #fff;
+}
+
+.schedule-table tr,
+.schedule-table td {
+    transition: .3s;
+}
+
+
+.trainers-section .container {
+    text-align: center;
+}
+
+.trainers-section {
+    background-color: #f9f9ff;
+    padding: 120px 0;
+}
+
+.trainers-cards {
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+.trainer-card span {
+    display: none;
+    position: absolute;
+}
+
+.trainer-card .image {
+    position: relative;
+}
+
+.trainer-card h3 {
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.trainer-card p {
+    font-size: 14px;
+    color: #777777;
+}
+.trainer-card{padding: 10px;}
+
+.trainer-card .image img{object-fit: cover;
+    width: 100%;
+}
