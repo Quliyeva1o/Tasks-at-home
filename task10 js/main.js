@@ -72,8 +72,8 @@ function task2() {
 
 // 3. Daxil olunmuş ədədin mərtəbələrinin cəmini qaytaran alqoritm yazın. Məsələn: 125 daxil olunarsa, nəticə 1+2+5=>8 qaytarmalıdır.
 function task3() {
-    a = prompt("eded daxil edin")
-    sum = 0
+    let a = prompt("eded daxil edin")
+    let sum = 0
     for (i = 0; i < a.length; i++) {
         sum += Number(a[i])
     }
@@ -90,9 +90,9 @@ function task3() {
 // Meselen 6 -->  1+2+3 =  6, demeli 6 perfect number-dir. (perfect numbers - 6, 28, 496, 8128, and 33550336)
 
 function task4() {
-    a = prompt("bir eded daxil edin")
+    let a = prompt("bir eded daxil edin")
 
-    sum = 0
+    let sum = 0
     for (i = 1; i < a; i++) {
         if (a % i == 0) {
             sum += i
@@ -118,7 +118,7 @@ function task4() {
 // Polindrome ədədlər soldan-sağa və sağdan-sola eyni olan ədədlərdir.
 // Məsələn: 121, 4554, 12321 etc. Əgər polindrome-dursa true çap olunsun, əks halda isə false.
 function task5() {
-    a = prompt("bir eded daxil edin")
+    let a = prompt("bir eded daxil edin")
     let b = ""
     for (i = a.length - 1; i >= 0; i--) {
         b += a[i]
@@ -172,19 +172,19 @@ function task6() {
 //  Məsələn: [4,2,7,9,3,12,46,32,19]; => min: 2, max: 46 => ededi ortasi (46+2)/2 => 24 qaytarmalıdır.
 
 
-function task7(){
-let arr = [4, 2, 7, 9, 3, 12, 46, 32, 19];
-let max = arr[0];
-let min = arr[0];
+function task7() {
+    const arr = [4, 2, 7, 9, 3, 12, 46, 32, 19];
+    let max = arr[0];
+    let min = arr[0];
 
-for (let i = 0; i < arr.length; i++) {
-    if (arr[i] > max) {
-        max = arr[i]; 
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+        if (arr[i] < min) {
+            min = arr[i];
+        }
     }
-    if (arr[i] < min) {
-        min = arr[i]; 
-    }
-}
-console.log(`ededi orta :${(min+max)/2}`)
+    console.log(`ededi orta :${(min + max) / 2}`)
 }
 // task7()
