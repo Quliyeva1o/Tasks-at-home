@@ -15,5 +15,23 @@
             "capital": "Berlin",
             "description":"Germany, officially the Federal Republic of Germany, is a country in the western region of Central Europe. It is the second-most populous country in Europe after Russia, and the most populous member state of the European Union. Germany lies between the Baltic and North Sea to the north and the Alps to the south."
         }
+    ],
+    "users": [
+        {
+            "id": "dwh2",
+            "username": "reiyna1o",
+            "email": "rena@gmail.com",
+            "password":"Admin123",
+            "role":"admin"
+
+        },
+        {
+            "id": "dwh2",
+            "username": "lamanmzadeh",
+            "email": "laman@gmail.com",
+            "password":"User123",
+            "role":"client"
+
+        }
     ]
 }

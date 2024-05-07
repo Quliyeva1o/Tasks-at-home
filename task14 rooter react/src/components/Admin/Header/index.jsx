@@ -10,10 +10,11 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-router-dom';
 
 
-export default function AdminHeader() {
+export default function AdminHeader({ localAdminID }) {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" style={{backgroundColor:"red"}}>
+      <AppBar position="static" style={{ backgroundColor: "red" }}>
+
         <Toolbar>
           <IconButton
             size="large"
@@ -23,15 +24,21 @@ export default function AdminHeader() {
             sx={{ mr: 2 }}
           >
             <MenuIcon />
+
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            News
+            {localAdminID ? "News" : "Login"}
           </Typography>
-          <Button color="inherit"><Link to={"/admin"}>DashBoard</Link></Button>
-          <Button color="inherit"><Link to={"/admin/add-country"}>Add Country</Link></Button>
-          <Button color="inherit"><Link to={"/admin/countries"}>Countries</Link></Button>
-        
+          {localAdminID &&
+            <>
+              <Button color="inherit"><Link to={"/admin"}>DashBoard</Link></Button>
+              <Button color="inherit"><Link to={"/admin/add-country"}>Add Country</Link></Button>
+              <Button color="inherit"><Link to={"/admin/countries"}>Countries</Link></Button></>
+          }
+
         </Toolbar>
+
+
       </AppBar>
     </Box>
   );

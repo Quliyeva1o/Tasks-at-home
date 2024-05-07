@@ -8,6 +8,7 @@ import ClientLayout from "../pages/Client/ClientLayout";
 import CountryDetail from "../pages/Admin/CountryDetail/index.jsx";
 import Home from "../pages/Client/Home";
 import CountryDetailClient from "../pages/Client/CountryDetail/index.jsx";
+import AdminLogin from "../pages/Admin/Login/index.jsx";
 
 export const ROUTES=[
     {
@@ -35,12 +36,16 @@ export const ROUTES=[
         path:'/admin',
         element:<AdminLayout/>,
         children:[
+            
             {
                 index:true,
                 element:<Dashboard/>
             },{
                 path:"add-country",
                 element:<AddCountry/>
+            },{
+                path:"login",
+                element:<AdminLogin/>
             },{
                 path:"countries",
                 element:<Countries/>

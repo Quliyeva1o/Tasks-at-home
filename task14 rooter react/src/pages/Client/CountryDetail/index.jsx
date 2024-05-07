@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { Navigate, useNavigate, useParams } from 'react-router-dom'
 import { getOne } from '../../../API/requests'
 import { endpoints } from '../../../API/constants'
 import Card from '@mui/material/Card';
@@ -15,6 +15,8 @@ const CountryDetailClient = () => {
   getOne(endpoints.countries,id).then((res)=>{
     setCountry(res.data)
   })
+
+  const navigate=useNavigate()
   return (
     <>
        <div style={{margin:"50px auto" ,width:"1200px"}}>
@@ -28,13 +30,21 @@ const CountryDetailClient = () => {
         <Typography gutterBottom variant="h5" component="div">
           {country.name}
         </Typography>
+        <Typography gutterBottom variant="body2" component="div" >
+                  Capital: {country.capital}
+                </Typography>
+                <Typography gutterBottom variant="body2" component="div">
+                  Population:{country.population}
+                </Typography>
         <Typography variant="body2" color="text.secondary">
         {country.description}
         </Typography>
+        
       </CardContent>
       <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
+        <Button size="small" onClick={()=>{
+          navigate(-1)
+        }}>Go back</Button>
       </CardActions>
     </Card>
        </div>
